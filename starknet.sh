@@ -1,5 +1,5 @@
 #!/bin/bash
-TAG=$( curl -s https://api.github.com/repos/eqlabs/pathfinder/releases/latest | grep tag_name | cut -d '"' -f 4)
+TAG=$( git clone -b v0.2.4-alpha https://github.com/eqlabs/pathfinder/ | cut -d '"' -f 4)
 SSHCON=$(curl -s -4 ifconfig.co)
 GREEN="\e[32m"
 NC="\e[0m"
